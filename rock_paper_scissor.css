@@ -14,8 +14,8 @@ body{
 .game{
   position:absolute;
   width:50vw;
-  height:64vh;
-  top:10vw;
+  height:67vh;
+  top:8vw;
   left:25vw;
   background-color: gold;
   border-radius: 30px 6px 30px 6px;
@@ -101,7 +101,6 @@ img{
 .again{
   padding-left: 2vw;
   padding-right: 2vw;
-  margin-bottom:1vw;
   height:6vh;
   width:12vw;
   padding-top: 1vh;
@@ -131,20 +130,22 @@ p{
   margin-top:3vw;
   margin-left: 2vw;
   font-weight: bolder;
-  font-size:29px;
-  font-family: "Poppins",sans-serif;
-  color:darkred;
+  font-size:25px;
+  font-family: "Bitcount Grid Double",system-ui;
+  color:red;
 }
 
 .heading{
   position:absolute;
   top:1vw;
-  left:39vw;
-  width:25vw;
-  height:14vh;
+  left:35vw;
+  width:34vw;
+  height:10vh;
+  text-align: center;
 }
 
 h1{
+  margin:0;
   font-size:55px;
   color:gold;
   padding-left:1vw;
@@ -199,13 +200,13 @@ animation: pop 0.3s ease;
   button{
     width:60px;
     height:70px;
-    margin-left:26px;
+    margin-left:22.5px;
     margin-top:2px;
   }
 
   .again{
     width:120px;
-    margin-top:10px;
+    margin-top:60px;
   }
 
   p{
@@ -213,8 +214,13 @@ animation: pop 0.3s ease;
   margin-left:0.5px;
   margin-right:0.5px;
   font-weight: bolder;
-  font-size:20px;
+  font-size:18px;
   font-family: "Poppins",sans-serif;
   color:darkred;
+}
+
+.move-img{
+  display: inline-block;
+  vertical-align: middle;
 }
 }
