@@ -6,9 +6,10 @@ body{
 
 .Main{
   width:100vw;
-  height:100vh;
+  min-height:100vh;
   background:linear-gradient(to right,darkred,red,orange);
   position: relative;
+
 }
 
 
@@ -175,71 +176,77 @@ animation: pop 0.3s ease;
 
 
 
+
   .rock,.paper,.scissor{
     opacity:1;
   }
 
   .heading{
-    width:100%;
-    left:0;
-    text-align:center;
-    
-  }
-
-  h1{
-    font-size:40px;
-    padding:0;
-    color:Gold;
-    font-family:"Bitcount Grid Double",system-ui;
-  }
-
-  .game{
-  width: 80%;
-  max-width: 400px;
-  margin-top:10%;
-  margin-left:auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-
+  position:relative;
+  width:100%;
+  top:0;
+  left:0;
+  text-align:center;
+}
+.game{
+  position:relative;
+  width:85%;
+  max-width:420px;
+  margin:20px auto 0 auto;
+  left:0;
+  padding-top:25px;
+  text-align: center;
+}
+h1{
+  margin:0;
+  padding-top:20px;
+  font-size:40px;
+  color:gold;
+  font-family:"Bitcount Grid Double",system-ui;
 }
 
 
   button{
-    width:60px;
-    height:70px;
-    margin-left:26px;
-    margin-right: 8px;
-    display: inline-block;
-    margin-top:1px;
-  }
+  width:60px;
+  height:70px;
+  margin-left:10px;
+  margin-right:10px;
+  display: inline-block;
+}
 
   .again{
     width:120px;
     margin-top:60px;
   }
 
+  .js_result{
+    color:darkred;
+    font-size:24px;
+  }
+
   p{
   margin-top:3vw;
-  margin-left:0.5px;
+  margin-left:2px;
   margin-right:0.5px;
   font-weight: bolder;
   font-size:20px;
   font-family: "Poppins",sans-serif;
   color:red;
 }
+
+
 .js_move{
-
-  display: inline-flex;
-  align-items: center;
-  gap:6px;
-  font-size: 18px;
-
-
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:4px;
+  font-size:18px;
+  flex-wrap:nowrap;
 }
 
+
 .move-img{
-  display: inline-block;
-  vertical-align: middle;
+  width:40px;
+  height:40px;
 }
 }
