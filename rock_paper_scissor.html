@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scisssor</title>
+  <link rel="stylesheet" href="rock_paper_scissor.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  
+
+</head>
+
+<body>
+
+  
+
+  <div class="Main">
+
+    <div class="heading">
+      <h1>Let's Play🎮</h1>
+    </div>
+
+  
+  
+    <div class="game">
+
+      
+      <button class='rock' onclick="playermove('Rock');"><img src="https://imgproxy.attic.sh/NJCujox_Fwass7rYN_Fx-F6dUbSw2uFgbl7QGd8Ezkg/rs:fit:768:768:1:1/t:1:FF00FF:false:false/pngo:false:true:256/aHR0cHM6Ly9hdHRp/Yy5zaC96NzdwZnB5/cTFuOXVzdGxreWg4/cGFuOGQ2N2ls.png"></button>
+
+      <button class = 'paper' onclick="playermove('Paper');"><img src="https://static.vecteezy.com/system/resources/thumbnails/055/494/269/small_2x/happy-paper-sheet-cartoon-character-illustration-png.png"></button>
+
+      <button class='scissor' onclick="playermove('Scissor');"><img src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-009-1024.png"></button>
+
+      
+      <p class="js_move"></p>
+      
+
+      <p class="js_result"></p>
+      
+
+      <p class="js_score"></p>
+      
+
+      <button class='again' onclick="
+       score.win =0;
+       score.lose = 0;
+       score.tie = 0;
+       document.querySelector('.js_result').innerHTML='';
+       document.querySelector('.js_move').innerHTML='';
+       Scoretell();
+       localStorage.setItem('score_str',JSON.stringify(score));
+       ">Reset </button>
+       <br>
+
+    </div>
+
+  </div>
+
+
+<script src="rock_paper_scissor.js"></script>
+
+  
+</body>
+</html>

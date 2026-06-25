@@ -1,0 +1,220 @@
+body{
+  margin:0;
+}
+
+
+.Main{
+  width:100vw;
+  height:100vh;
+  background:linear-gradient(to right,darkred,red,orange);
+  position: relative;
+}
+
+
+.game{
+  position:absolute;
+  width:50vw;
+  height:64vh;
+  top:10vw;
+  left:25vw;
+  background-color: gold;
+  border-radius: 30px 6px 30px 6px;
+  box-shadow:4px 8px 0 0 rgba(0,0,0,0.15);
+  padding-top: 80px;
+  border: 3px  solid;
+  
+}
+
+button{
+ width:10vw;
+ margin-left:5vw;
+ height:15vh;
+ background-color: red;
+ border-radius:28%;
+ transition: all 0.15s ease-in-out;
+}
+
+.rock,.paper , .scissor{
+  border:solid 8px;
+  opacity:0;
+  transition-delay:1s;
+  transform: scale(1.02);
+  }
+
+  .rock:hover{
+    transform:scale(1.2);
+    background-color: white;
+    border:solid red 8px;
+  }
+
+  .paper:hover{
+    transform:scale(1.2);
+    background-color: white;
+    border:solid red 8px;
+  }
+
+  .scissor:hover{
+    transform:scale(1.2);
+     background-color: white;
+    border:solid red 8px;
+  
+  }
+
+
+  .Main:hover .rock{
+    opacity:1;
+    transition-delay:0.2s;
+
+  }
+
+   .Main:hover .paper{
+    opacity:1;
+    transition-delay:0.5s;
+
+  }
+
+  .Main:hover .scissor{
+    opacity:1;
+    transition-delay: 0.7s;
+
+  }
+
+
+
+
+.rock:hover{
+  border:solid red 8px;
+}
+
+.paper:hover{
+  border:solid  red 8px;
+}
+
+.scissor:hover{
+  border:solid red 8px;
+}
+img{
+  width:100%;
+  height:100%;
+}
+
+.again{
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-bottom:1vw;
+  height:6vh;
+  width:12vw;
+  padding-top: 1vh;
+  padding-bottom: 5vh;
+  border-radius:27px;
+  font-weight: bold;
+  font-size:x-large;
+  font-family: "Poppins",sans-serif;
+  background-color: red;
+  cursor: pointer;
+  border:solid black 5px;
+  border-radius: 12px 4px 12px 4px;
+  transition:all 0.15s ease-in-out;
+}
+
+.again:hover{
+  color:red;
+  background-color: white;
+  border:solid red 5px;
+  transform: scale(1.1);
+
+}
+
+
+p{
+  text-align: center;
+  margin-top:3vw;
+  margin-left: 2vw;
+  font-weight: bolder;
+  font-size:29px;
+  font-family: "Poppins",sans-serif;
+  color:darkred;
+}
+
+.heading{
+  position:absolute;
+  top:1vw;
+  left:39vw;
+  width:25vw;
+  height:14vh;
+}
+
+h1{
+  font-size:55px;
+  color:gold;
+  padding-left:1vw;
+  font-family: "Bitcount Grid Double",system-ui;
+}
+
+
+.move-img{
+  width:8vw;
+  height:8vh;
+  margin-right:1vw;
+  vertical-align: middle;
+}
+
+.js_result{
+animation: pop 0.3s ease;
+}
+
+@keyframes pop{
+0%{transform:scale(0.8);}
+100%{transform:scale(1);}
+}
+
+
+@media (max-width:768px){
+
+
+  .rock,.paper,.scissor{
+    opacity:1;
+  }
+
+  .heading{
+    width:100%;
+    left:0;
+    text-align:center;
+    
+  }
+
+  h1{
+    font-size:40px;
+    padding:0;
+    color:Gold;
+    font-family:"Bitcount Grid Double",system-ui;
+  }
+
+  .game{
+    width:75vw;
+    left:12.5vw;
+    top:30vw;
+  }
+
+  button{
+    width:60px;
+    height:70px;
+    margin-left:26px;
+    margin-top:2px;
+  }
+
+  .again{
+    width:120px;
+    margin-top:10px;
+  }
+
+  p{
+  margin-top:3vw;
+  margin-left:0.5px;
+  margin-right:0.5px;
+  font-weight: bolder;
+  font-size:20px;
+  font-family: "Poppins",sans-serif;
+  color:darkred;
+}
+}
